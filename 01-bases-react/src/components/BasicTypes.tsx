@@ -3,22 +3,19 @@ import React from 'react'
 export const BasicTypes = () => {
   const name: string = "Víctor";
   const age: number = 28;
-  let isActive: boolean = true;
+  let isActive: boolean = false;
 
   return (
     <>
-      <div>
-        Hello world
-      </div>
-      <div>
-        {name}
-      </div>
-      <div>
-        {" " + age}
-      </div>
-      <div>
-        {" " + isActive}
-      </div>
+      <h3>Basic Types</h3>
+      {isActive?
+      <ul>
+        <li>Nombre {name}</li>
+        <li>Edad {age}</li>
+      </ul>:
+      <p>Usuario inactivo</p>
+      }
+      
 
 
     </>
