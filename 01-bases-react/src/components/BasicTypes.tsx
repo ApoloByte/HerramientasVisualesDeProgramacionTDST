@@ -15,6 +15,13 @@ export const BasicTypes = () => {
         </ul> :
         <p>Usuario inactivo</p>
       }
+      <button onClick={()=>{
+        setIsActive(!isActive);
+      }}>
+        {isActive?"Desactivar": "Activar"} Usuario
+        </button>
+
+
       <h2>Variable normal</h2>
       <button onClick={
         () => {
