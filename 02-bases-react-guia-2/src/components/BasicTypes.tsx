@@ -6,6 +6,14 @@ export const BasicTypes = () => {
     // const isActive: boolean = true;
     const [isActive, setIsActive] = useState(true)
 
+    const names = [
+        "CARVAJAL MOLANO JUAN CAMILO",
+        "COLLAZOS ROZO NICOLAS",
+        "DIAZ TROYANO JAIME ANDRES",
+        "GAITAN ZUÑIGA IMANOL DAVID",
+        "GUERRERO VOLVERAS ANDRES FELIPE",
+    ];
+
     return (
         <>
             <div>BasicTypes</div>
@@ -24,6 +32,17 @@ export const BasicTypes = () => {
             <button onClick={() => setIsActive(!isActive)}>
                 {isActive ? "Desactivar" : "Activar"}
             </button>
+
+            {names[0]}
+            <ul>
+                {names.map(
+                    (name, index) => <li key={index}>
+                        {name}
+                    </li>
+                )}
+            </ul>
+
+
 
         </>
     )
