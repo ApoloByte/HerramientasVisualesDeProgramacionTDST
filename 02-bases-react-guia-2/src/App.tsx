@@ -1,13 +1,13 @@
 import './App.css'
 import { BasicTypes } from './components/BasicTypes'
-import { Pets } from './Pets'
+import { Pets } from './components/Pets'
 
 function App() {
 
   return (
     <>
       <BasicTypes />
-      <Pets/>
+      {/* <Pets/> */}
     </>
   )
 }

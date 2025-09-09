@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const BasicTypes = () => {
     const name: string = "Víctor";
@@ -13,6 +13,16 @@ export const BasicTypes = () => {
         "GAITAN ZUÑIGA IMANOL DAVID",
         "GUERRERO VOLVERAS ANDRES FELIPE",
     ];
+
+    const user = {
+        name: "Juanito",
+        email: "juan@gmail.com",
+        age: 19,
+        role: "administrador",
+        maritalStatus: "casado",
+        isActive: true
+    }
+   
 
     return (
         <>
@@ -41,6 +51,13 @@ export const BasicTypes = () => {
                     </li>
                 )}
             </ul>
+
+            {names.join(", ")}
+
+            <h2>Objetos literales</h2>
+            {user.name}
+
+            
 
 
 
