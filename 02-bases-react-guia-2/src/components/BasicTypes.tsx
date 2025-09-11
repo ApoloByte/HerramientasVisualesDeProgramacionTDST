@@ -23,15 +23,24 @@ export const BasicTypes = () => {
         isActive: true
     }
 
-    const users = [
+    interface User {
+        name?: string;
+        email: string;
+        age: number;
+        role: string;
+        maritalStatus: string;
+        isActive: boolean;
+    }
+
+    const users: User[] = [
         {
-            name: "Pepito 1",
-            email: "juan@gmail.com",
+            email: "juan@gmail.co",
             age: 19,
             role: "administrador",
             maritalStatus: "casado",
             isActive: true
         },
+
         {
             name: "Pepito 2",
             email: "juan@gmail.com",
