@@ -1,6 +1,7 @@
 import './App.css'
 import { BasicTypes } from './components/BasicTypes'
 import { Pets } from './components/Pets'
+import { Products } from './components/Products'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <BasicTypes />
       {/* <Pets/> */}
+      <Products />
     </>
   )
 }
