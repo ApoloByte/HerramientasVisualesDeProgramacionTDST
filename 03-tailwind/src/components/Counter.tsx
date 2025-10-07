@@ -1,29 +1,24 @@
-import React, { useState } from "react";
-import { useCounter } from "../hooks/useCounter";
-import { StyledButton } from "./StyledButton";
-
+import React, { useState } from 'react'
+import { useCounter } from '../hooks/useCounter'
+import { StyleButton } from './StyleButton'
 export const Counter = () => {
-  const { count, increaseBy } = useCounter();
+    const { count, increaseBy } = useCounter()
 
-  return (
-    <div>
-      <h3 className="text-center mb-3">
-        Counter
-        <small>{" " + count}</small>
-      </h3>
+    return (
+        <div className='flex flex-col gap-5'>
 
-      <div className="flex gap-4">
-        <StyledButton
-          label={"+1"}
-          color="bg-green-500"
-          handleClick={() => increaseBy(+1)}
-        />
-        <StyledButton
-          label={"-1"}
-          color="bg-red-500"
-          handleClick={() => increaseBy(-1)}
-        />
-      </div>
-    </div>
-  );
-};
+            <h3 className='text-center'>
+                Counter
+                <span className='font-bold'>
+                    {" " + count}
+                </span></h3>
+
+            <div className='flex gap-4'>
+                <StyleButton label="+1" color="bg-blue-400" handleClick={() => (increaseBy(+1))} />
+                <StyleButton label="-1" color="bg-red-400" handleClick={() => (increaseBy(-1))} />
+                
+
+            </div>
+        </div>
+    )
+}
