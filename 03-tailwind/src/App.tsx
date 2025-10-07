@@ -1,5 +1,6 @@
 import "./App.css";
 import { Counter } from "./components/Counter";
+import { Parent } from "./components/Parent";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <h1 className='text-4xl mb-5'>Contador</h1>
         <Counter />
         
+        <Parent name='Pepito' age={29} />
         
 
       </div>
