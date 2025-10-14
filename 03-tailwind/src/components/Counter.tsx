@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { useCounter } from '../hooks/useCounter'
 import { StyleButton } from './StyleButton'
+import { useAuthContext } from '../context/AuthContext'
 export const Counter = () => {
     const { count, increaseBy } = useCounter()
+    const {status} = useAuthContext();
 
     return (
         <div className='flex flex-col gap-5'>
@@ -10,7 +12,8 @@ export const Counter = () => {
             <h3 className='text-center'>
                 Counter
                 <span className='font-bold'>
-                    {" " + count}
+                    {" " + count + status}
+
                 </span></h3>
 
             <div className='flex gap-4'>
