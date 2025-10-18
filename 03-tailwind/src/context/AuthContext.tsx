@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, type PropsWithChildren } from "react";
-import { type AuthStatus, type AuthState, type User } from "../interfaces/iContext";
+import { type AuthStatus, type AuthState, type User } from "../types/authContextTypes";
 
 const USER_LIST: User[] = [
   {
